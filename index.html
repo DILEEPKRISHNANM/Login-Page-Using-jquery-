@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd818db9e4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jQuery.passwordStrength-master/jquery.passwordstrength.js"></script>
+    
+    <title>Login Page</title>
+</head>
+<body>
+    <form name="dileep">
+        <img src="./download.png">
+        <div class="input-field">
+            <span><i class="fa-solid fa-user"></i></span>
+            <input type="text" placeholder=" User name">
+        </div>
+        <div class="input-field">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" placeholder=" Enter Email">
+        </div>
+        <div class="input-field">
+            <span><i class="fa-solid fa-lock"></i></span>
+            <input type="password" id="password" placeholder=" Enter Password ">
+        </div>
+        
+        <button type="submit"><span class="signup"><i class="fa-solid fa-right-to-bracket"></i></span>Register</button>
+    </form>
+    
+    
+    <script type="text/javascript">
+        $(function() {
+            $("#password").passwordStrength();
+        });
+    </script>
+</body>
+</html>
